@@ -1,39 +1,54 @@
-# Atividade-Diagnostica
+# Api rest ponto eletronico
 --------------------------------------------------------------------------------------------------------------
 
 O objetivo dessa atividade é ser uma ferramenta diagnóstica para o futuro aluno determinar se o seu nível de conhecimento é adequado para o ingresso direto na 2ª etapa do curso (Especialização). Ela também tem o objetivo de servir como um exercício de revisão dos conceitos que são abordados na 1ª etapa (Pré-Requisitos).
 
 
-Api Gestao
+## Api Gestão
 --------------------------------------------------------------------------------------------------------------
-//Listagem
-//http://localhost:8080/api/gestao/usuario
+### Listagem de todos usuarios
+'''
+GET /gestao/usuario
+Exemplo GET http://localhost:8080/api/gestao/usuario
+'''
 
+### Consulta por id
+'''
+GET /gestao/usuario/:id_usuario
+Exemplo GET http://localhost:8080/api/gestao/usuario/2
+'''
+> **:id_usuario**	integer
 
-//Consulta por id
-//http://localhost:8080/api/gestao/usuario/2
+### Consulta por nome
+'''
+GET /gestao/usuario/nome/:nome_usuario
+Exemplo GET http://localhost:8080/api/gestao/usuario/nome/arthur
+'''
+> **:nome_usuario**   String
 
+### Criação de usuario
+'''
+POST gestao/usuario
+Exemplo POST:
+   URL:
+      http://localhost:8080/api/gestao/usuario
+   Headers:
+      Content-Type = application/json
+   Body:
+   {
+      "nome": "arthur",
+      "cpf": "22910975859",
+      "email":"art@gamil.com",
+   }
+'''
+> **nome**     String
+> **cpf**      String
+> **email**    String
 
-//Consulta por nome
-//http://localhost:8080/api/gestao/usuario/nome/arthur
-
-//criaçao
-  /*
-        URL http://localhost:8080/api/gestao/usuario
-        headers
-        Content-Type = application/json
-        body
-        {
-            "nome": "arthur",
-            "cpf": "2202001115",
-            "email":"art@gmil.com",
-            "data_cadastro": "20/03/2020"
-        }
-   */
-   
-put
-// edicao usuario
-/*
+### Edição usuario
+'''
+PUT gestao/usuario
+Exemplo PUT:
    URL
       http://localhost:8080/api/gestao/usuario
    headers
@@ -44,25 +59,40 @@ put
           "nome": "arthur",
           "cpf": "2202001115",
           "email":"art@gmil.com",
-          "data_cadastro": "20/03/2020"
       }
-*/
+'''
+> **id**       integer
+> **nome**     String
+> **cpf**      String
+> **email**    String
 
-Api Ponto
+## Api Ponto
 -----------------------------------------------------------
-gets
-//Listagem
-//http://localhost:8080/api/ponto
 
-//Consulta por id
-//http://localhost:8080/api/ponto/2
+### Listagem pontos batidos
+'''
+GET /ponto
+Exemplo GET http://localhost:8080/api/ponto
+'''
 
-//Consulta por nome
-// http://localhost:8080/api/ponto/usuario/arthur
-    
-post
-//criaçao
-/*
+### Consulta por id
+'''
+GET /ponto/:id_ponto
+Exemplo GET http://localhost:8080/api/ponto/2
+'''
+> **:id_ponto**	integer
+
+### Consulta por nome
+'''
+GET /ponto/:id_nome
+Exemplo GET http://localhost:8080/api/ponto/usuario/arthur
+'''
+> **:id_nome**	String
+
+### Batendo ponto
+'''
+POST /ponto
+Exemplo POST:
    URL 
       http://localhost:8080/api/ponto
    headers
@@ -70,7 +100,8 @@ post
    body
    {
        "nome": "arthur",
-       "data": "20/03/2020",
        "tipo": "saida"
    }
-*/
+'''
+> **nome**    String
+> **tipo**    String
