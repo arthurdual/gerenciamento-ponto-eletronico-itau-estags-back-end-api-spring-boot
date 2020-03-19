@@ -1,8 +1,11 @@
 package com.pontoeletronico.apirest.models;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "TB_PONTO")
@@ -14,8 +17,8 @@ public class Ponto implements Serializable {
     private long id;
     @NotNull
     private String nome;
-    @NotNull
-    private String data;
+    @CreationTimestamp
+    private LocalDateTime data;
     @NotNull
     private String tipo;
 
@@ -35,13 +38,9 @@ public class Ponto implements Serializable {
         this.nome = nome;
     }
 
-    public String getData() {
-        return data;
-    }
+    public LocalDateTime getData() { return data; }
 
-    public void setData(String data) {
-        this.data = data;
-    }
+    public void setData(LocalDateTime data) { this.data = data; }
 
     public String getTipo() {
         return tipo;

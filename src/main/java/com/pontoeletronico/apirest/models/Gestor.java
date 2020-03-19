@@ -1,8 +1,11 @@
 package com.pontoeletronico.apirest.models;
 
+        import org.hibernate.annotations.CreationTimestamp;
+        import org.hibernate.annotations.UpdateTimestamp;
         import javax.persistence.*;
         import javax.validation.constraints.NotNull;
         import java.io.Serializable;
+        import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "TB_GESTOR")
@@ -19,16 +22,15 @@ public class Gestor implements Serializable {
     private String cpf;
     @NotNull
     private String email;
-    @NotNull
-    private String data_cadastro;
+    @Column(name = "data_cadastro", updatable = false)
+    @CreationTimestamp
+    private LocalDateTime data_cadastro;
+    @UpdateTimestamp
+    private LocalDateTime data_cadastroUpdate;
 
-    public long getId() {
-        return id;
-    }
+    public long getId() { return id; }
 
-    public void setId(long id) {
-        this.id = id;
-    }
+    public void setId(long id) { this.id = id; }
 
     public String getNome() {
         return nome;
@@ -54,11 +56,10 @@ public class Gestor implements Serializable {
         this.email = email;
     }
 
-    public String getData_cadastro() {
-        return data_cadastro;
-    }
+    public LocalDateTime getData_cadastro() { return data_cadastro; }
+    public void setData_cadastro(LocalDateTime data_cadastro) { this.data_cadastro = data_cadastro; }
 
-    public void setData_cadastro(String data_cadastro) {
-        this.data_cadastro = data_cadastro;
-    }
+    public LocalDateTime getData_cadastroUpdate() { return data_cadastroUpdate; }
+
+    public void setData_cadastroUpdate(LocalDateTime data_cadastroUpdate) { this.data_cadastroUpdate = data_cadastroUpdate; }
 }
