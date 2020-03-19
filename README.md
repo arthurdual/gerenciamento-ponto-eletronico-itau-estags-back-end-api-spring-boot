@@ -1,61 +1,49 @@
-# Api rest ponto eletronico
---------------------------------------------------------------------------------------------------------------
-
-O objetivo dessa atividade é ser uma ferramenta diagnóstica para o futuro aluno determinar se o seu nível de conhecimento é adequado para o ingresso direto na 2ª etapa do curso (Especialização). Ela também tem o objetivo de servir como um exercício de revisão dos conceitos que são abordados na 1ª etapa (Pré-Requisitos).
-
-
+# ApiRest ponto eletronico
 ## Api Gestão
 --------------------------------------------------------------------------------------------------------------
-### Listagem de todos usuarios
-'''json
-GET /gestao/usuario
-Exemplo GET http://localhost:8080/api/gestao/usuario
-'''
+## Listagem de todos usuarios  
+#### GET /gestao/usuario  
+**Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario  
 
-### Consulta por id
-'''
-GET /gestao/usuario/:id_usuario
-Exemplo GET http://localhost:8080/api/gestao/usuario/2
-'''
-> **:id_usuario:**	integer
+## Consulta por id  
+#### GET /gestao/usuario/:id_usuario  
+**Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario/2  
+**:id_usuario**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer  
 
-### Consulta por nome
-'''
-GET /gestao/usuario/nome/:nome_usuario
-Exemplo GET http://localhost:8080/api/gestao/usuario/nome/arthur
-'''
-> **:nome_usuario:**   String
+## Consulta por nome  
+#### GET /gestao/usuario/nome/:nome_usuario  
+**Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario/nome/arthur  
+**:nome_usuario**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
 
-### Criação de usuario
-'''
-POST gestao/usuario
-Exemplo POST:
-   URL:
-      http://localhost:8080/api/gestao/usuario
-   Headers:
-      Content-Type = application/json
-   Body:
-   {
-      "nome": "arthur",
-      "cpf": "22910975859",
-      "email":"art@gamil.com",
-   }
-'''
-> **nome:**     String
+## Criação de usuario  
+#### POST gestao/usuario  
 
-> **cpf:**      String
+**Exemplo POST:**  
+   **URL:**  
+&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario  
+   **Headers:**  
+&nbsp;&nbsp;&nbsp;&nbsp;Content-Type = application/json  
+   **Body:**  
+```json
+{
+   "nome": "arthur",
+   "cpf": "22910975859",
+   "email":"art@gamil.com",
+}
+```
+**nome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**cpf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**email**&nbsp;&nbsp;&nbsp;&nbsp;String  
 
-> **email:**    String
-
-### Edição usuario
-#### PUT /gestao/usuario
+## Edição usuario  
+#### PUT /gestao/usuario  
 
 **Exemplo PUT:**  
    **URL**  
 &nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario  
    **Headers**  
 &nbsp;&nbsp;&nbsp;&nbsp;Content-Type = application/json  
-   **Body**
+   **Body**  
 ```json
 {
    "id": 3,
@@ -64,48 +52,41 @@ Exemplo POST:
    "email":"art@gmil.com",
 }
 ```
-**id:**       integer  
-**nome:**     String  
-**cpf:**      String  
-**email:**    String  
+**id**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer  
+**nome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**cpf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**email**&nbsp;&nbsp;&nbsp;&nbsp;String  
 
 ## Api Ponto
 -----------------------------------------------------------
 
-### Listagem pontos batidos
-#### GET /ponto
-<p>
-<em>Exemplo GET</em> http://localhost:8080/api/ponto
-</p>
+## Listagem pontos batidos  
+#### GET /ponto  
+**Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/ponto  
 
-### Consulta por id
-<p>
-GET /ponto/:id_ponto
-**Exemplo GET** http://localhost:8080/api/ponto/2
-</p>
-> **:id_ponto:**	integer
+## Consulta por id  
+#### GET /ponto/:id_ponto  
+**Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/ponto/2  
+**:id_ponto**&nbsp;&nbsp;&nbsp;&nbsp;integer  
 
-### Consulta por nome
+## Consulta por nome  
+#### GET /ponto/:id_nome  
+**Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/ponto/usuario/arthur  
+**:id_nome**&nbsp;&nbsp;&nbsp;&nbsp;String  
+
+## Batendo ponto  
+#### POST /ponto  
+**Exemplo POST:**  
+   **URL**  
+&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/ponto  
+   **headers**  
+&nbsp;&nbsp;&nbsp;&nbsp;Content-Type = application/json  
+   **Body**  
+```json
+{
+   "nome": "arthur",
+   "tipo": "saida"
+}
 ```
-GET /ponto/:id_nome
-Exemplo GET http://localhost:8080/api/ponto/usuario/arthur
-```
-> **:id_nome:**	String
-
-### Batendo ponto
-'''json
-POST /ponto
-Exemplo POST:
-   URL 
-      http://localhost:8080/api/ponto
-   headers
-      Content-Type = application/json
-   body
-   {
-       "nome": "arthur",
-       "tipo": "saida"
-   }
-'''
-> **nome:**    String
-
-> **tipo:**    String
+**nome**&nbsp;&nbsp;&nbsp;&nbsp;String  
+**tipo**&nbsp;&nbsp;&nbsp;&nbsp;String  
