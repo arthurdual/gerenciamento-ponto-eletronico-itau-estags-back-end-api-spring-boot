@@ -52,9 +52,9 @@ Exemplo POST:
 
 **Exemplo PUT:**  
    **URL**  
-      http://localhost:8080/api/gestao/usuario  
+&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario  
    **Headers**  
-      Content-Type = application/json  
+&nbsp;&nbsp;&nbsp;&nbsp;Content-Type = application/json  
    **Body**
 ```json
 {
