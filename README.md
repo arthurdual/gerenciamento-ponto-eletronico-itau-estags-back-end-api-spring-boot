@@ -7,7 +7,7 @@ O objetivo dessa atividade é ser uma ferramenta diagnóstica para o futuro alun
 ## Api Gestão
 --------------------------------------------------------------------------------------------------------------
 ### Listagem de todos usuarios
-'''
+'''json
 GET /gestao/usuario
 Exemplo GET http://localhost:8080/api/gestao/usuario
 '''
@@ -17,14 +17,14 @@ Exemplo GET http://localhost:8080/api/gestao/usuario
 GET /gestao/usuario/:id_usuario
 Exemplo GET http://localhost:8080/api/gestao/usuario/2
 '''
-> **:id_usuario**	integer
+> **:id_usuario:**	integer
 
 ### Consulta por nome
 '''
 GET /gestao/usuario/nome/:nome_usuario
 Exemplo GET http://localhost:8080/api/gestao/usuario/nome/arthur
 '''
-> **:nome_usuario**   String
+> **:nome_usuario:**   String
 
 ### Criação de usuario
 '''
@@ -41,19 +41,23 @@ Exemplo POST:
       "email":"art@gamil.com",
    }
 '''
-> **nome**     String
-> **cpf**      String
-> **email**    String
+> **nome:**     String
+
+> **cpf:**      String
+
+> **email:**    String
 
 ### Edição usuario
-'''
-PUT gestao/usuario
-Exemplo PUT:
-   URL
+#### PUT /gestao/usuario
+<p>
+<em>Exemplo PUT:</em>
+   <em>URL</em>
       http://localhost:8080/api/gestao/usuario
-   headers
+   <em>headers</em>
       Content-Type = application/json
-   body
+   <em>body</em>
+</p>
+'''json
       {
           "id": 3,
           "nome": "arthur",
@@ -61,36 +65,36 @@ Exemplo PUT:
           "email":"art@gmil.com",
       }
 '''
-> **id**       integer
-> **nome**     String
-> **cpf**      String
-> **email**    String
+<p> <em>id:</em>       integer</p>
+<p> <em>nome:</em>     String</p>
+<p> <em>cpf:</em>      String</p>
+<p> <em>email:</em>    String</p>
 
 ## Api Ponto
 -----------------------------------------------------------
 
 ### Listagem pontos batidos
-'''
-GET /ponto
-Exemplo GET http://localhost:8080/api/ponto
-'''
+#### GET /ponto
+<p>
+<em>Exemplo GET</em> http://localhost:8080/api/ponto
+</p>
 
 ### Consulta por id
-'''
+<p>
 GET /ponto/:id_ponto
-Exemplo GET http://localhost:8080/api/ponto/2
-'''
-> **:id_ponto**	integer
+**Exemplo GET** http://localhost:8080/api/ponto/2
+</p>
+> **:id_ponto:**	integer
 
 ### Consulta por nome
 '''
 GET /ponto/:id_nome
 Exemplo GET http://localhost:8080/api/ponto/usuario/arthur
 '''
-> **:id_nome**	String
+> **:id_nome:**	String
 
 ### Batendo ponto
-'''
+'''json
 POST /ponto
 Exemplo POST:
    URL 
@@ -103,5 +107,6 @@ Exemplo POST:
        "tipo": "saida"
    }
 '''
-> **nome**    String
-> **tipo**    String
+> **nome:**    String
+
+> **tipo:**    String
