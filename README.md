@@ -49,22 +49,22 @@ Exemplo POST:
 
 ### Edição usuario
 #### PUT /gestao/usuario
-<p>
-<em>Exemplo PUT:</em>
-   <em>URL</em>
-      http://localhost:8080/api/gestao/usuario
-   <em>headers</em>
-      Content-Type = application/json
-   <em>body</em>
-</p>
-'''json
-      {
-          "id": 3,
-          "nome": "arthur",
-          "cpf": "2202001115",
-          "email":"art@gmil.com",
-      }
-'''
+
+**Exemplo PUT:**
+   URL  
+      http://localhost:8080/api/gestao/usuario  
+   Headers  
+      Content-Type = application/json  
+   Body  
+
+```json
+{
+   "id": 3,
+   "nome": "arthur",
+   "cpf": "2202001115",
+   "email":"art@gmil.com",
+}
+```
 <p> <em>id:</em>       integer</p>
 <p> <em>nome:</em>     String</p>
 <p> <em>cpf:</em>      String</p>
@@ -87,10 +87,10 @@ GET /ponto/:id_ponto
 > **:id_ponto:**	integer
 
 ### Consulta por nome
-'''
+```
 GET /ponto/:id_nome
 Exemplo GET http://localhost:8080/api/ponto/usuario/arthur
-'''
+```
 > **:id_nome:**	String
 
 ### Batendo ponto
