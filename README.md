@@ -50,13 +50,12 @@ Exemplo POST:
 ### Edição usuario
 #### PUT /gestao/usuario
 
-**Exemplo PUT:**
-   URL  
+**Exemplo PUT:**  
+   **URL**  
       http://localhost:8080/api/gestao/usuario  
-   Headers  
+   **Headers**  
       Content-Type = application/json  
-   Body  
-
+   **Body**
 ```json
 {
    "id": 3,
@@ -65,10 +64,10 @@ Exemplo POST:
    "email":"art@gmil.com",
 }
 ```
-<p> <em>id:</em>       integer</p>
-<p> <em>nome:</em>     String</p>
-<p> <em>cpf:</em>      String</p>
-<p> <em>email:</em>    String</p>
+**id:**       integer  
+**nome:**     String  
+**cpf:**      String  
+**email:**    String  
 
 ## Api Ponto
 -----------------------------------------------------------
