@@ -1,6 +1,6 @@
 # ApiRest ponto eletronico  
-**Foi feito o deploy desta API na HEROKU e pode ser acessesada facilmente pelo seu Swagger na sequinte URL:** https://apirest-pontoeletronico.herokuapp.com/swagger-ui.html  
-O **Swagger** da api localhost também pode ser acessado na seguinte URL:&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/swagger-ui.html  
+**Foi feito o deploy desta API na HEROKU e pode ser acessada facilmente pelo seu Swagger na sequinte URL:** https://apirest-pontoeletronico.herokuapp.com/swagger-ui.html  
+O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/swagger-ui.html  
 > **Swagger** É um aplicativo que converte as anotações do próprio Swagger contidas no código fonte das APIs REST em uma documentação interativa.  
 ## Api Gestão  
 ## Listagem de todos usuarios  
