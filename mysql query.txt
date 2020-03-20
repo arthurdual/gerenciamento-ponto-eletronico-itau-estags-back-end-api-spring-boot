@@ -1,0 +1,11 @@
+url banco na heroku:
+mysql://b58676b3cf57a0:de9c032f@us-cdbr-iron-east-04.cleardb.net/heroku_d56cd7af1a88b7d?reconnect=true
+
+Query mysql workbench:
+
+show databases;
+use heroku_d56cd7af1a88b7d;
+show tables;
+select * from tb_gestor;
+DELETE FROM tb_gestor WHERE nome = 'arthdut';
+select * from tb_gestor;

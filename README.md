@@ -1,6 +1,8 @@
-# ApiRest ponto eletronico
-## Api Gestão
---------------------------------------------------------------------------------------------------------------
+# ApiRest ponto eletronico  
+**Foi feito o deploy desta API na HEROKU e pode ser acessesada facilmente pelo seu Swagger na sequinte URL:** https://apirest-pontoeletronico.herokuapp.com/swagger-ui.html  
+O **Swagger** da api localhost também pode ser acessado na seguinte URL:&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/swagger-ui.html  
+> **Swagger** É um aplicativo que converte as anotações do próprio Swagger contidas no código fonte das APIs REST em uma documentação interativa.  
+## Api Gestão  
 ## Listagem de todos usuarios  
 #### GET /gestao/usuario  
 **Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/gestao/usuario  
@@ -31,8 +33,8 @@
    "email":"art@gamil.com",
 }
 ```
-**nome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
-**cpf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**nome**&nbsp;&nbsp;&nbsp;&nbsp;String  
+**cpf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
 **email**&nbsp;&nbsp;&nbsp;&nbsp;String  
 
 ## Edição usuario  
@@ -52,14 +54,12 @@
    "email":"art@gmil.com",
 }
 ```
-**id**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer  
-**nome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
-**cpf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
-**email**&nbsp;&nbsp;&nbsp;&nbsp;String  
+**id**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;integer  
+**nome**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**cpf**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
+**email**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
 
-## Api Ponto
------------------------------------------------------------
-
+## Api Ponto  
 ## Listagem pontos batidos  
 #### GET /ponto  
 **Exemplo GET**&nbsp;&nbsp;&nbsp;&nbsp;http://localhost:8080/api/ponto  
@@ -89,4 +89,4 @@
 }
 ```
 **nome**&nbsp;&nbsp;&nbsp;&nbsp;String  
-**tipo**&nbsp;&nbsp;&nbsp;&nbsp;String  
+**tipo**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String  
