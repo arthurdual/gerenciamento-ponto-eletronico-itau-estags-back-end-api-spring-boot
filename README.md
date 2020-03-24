@@ -15,7 +15,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
         "cpf": "2202001115",
         "email": "art@gmil.com",
         "data_cadastro": "2020-03-24T12:12:35",
-        "data_cadastroUpdate": "2020-03-24T12:13:13"
+        "data_update_cadastro": "2020-03-24T12:13:13"
     },
     {
         "id": 8,
@@ -23,7 +23,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
         "cpf": "22910975859",
         "email": "art@gamil.com",
         "data_cadastro": "2020-03-24T12:12:38",
-        "data_cadastroUpdate": "2020-03-24T12:12:38"
+        "data_update_cadastro": "2020-03-24T12:12:38"
     }
 ]
 ```
@@ -39,7 +39,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
     "cpf": "22910975859",
     "email": "art@gamil.com",
     "data_cadastro": "2020-03-24T12:17:18",
-    "data_cadastroUpdate": "2020-03-24T12:17:18"
+    "data_update_cadastro": "2020-03-24T12:17:18"
 }
 ```
 ## Consulta por nome  
@@ -54,7 +54,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
    "cpf": "22910975859",
    "email": "art@gamil.com",
    "data_cadastro": "2020-03-24T12:12:38",
-   "data_cadastroUpdate": "2020-03-24T12:12:38"
+   "data_update_cadastro": "2020-03-24T12:12:38"
 }
 ```
 ## Criação de usuario  
@@ -85,7 +85,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
     "cpf": "22910975859",
     "email": "art@gamil.com",
     "data_cadastro": "2020-03-24T12:17:18.021",
-    "data_cadastroUpdate": "2020-03-24T12:17:18.021"
+    "data_update_cadastro": "2020-03-24T12:17:18.021"
 }
 ```
 
@@ -119,7 +119,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
     "cpf": "2202001115",
     "email": "art@gmil.com",
     "data_cadastro": null,
-    "data_cadastroUpdate": "2020-03-24T12:13:13.988"
+    "data_update_cadastro": "2020-03-24T12:13:13.988"
 }
 ```
 > **OBS:** apesar da data de cadastro retornar null, ela não foi alterada.  
