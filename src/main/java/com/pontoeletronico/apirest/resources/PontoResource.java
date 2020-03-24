@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value="/api")
 @Api(value="APIREST PONTO")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PontoResource {
     @Autowired
     PontoRepository pontoRepository;

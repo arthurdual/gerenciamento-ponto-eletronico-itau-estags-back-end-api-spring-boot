@@ -26,7 +26,7 @@ public class Gestor implements Serializable {
     @CreationTimestamp
     private LocalDateTime data_cadastro;
     @UpdateTimestamp
-    private LocalDateTime data_cadastroUpdate;
+    private LocalDateTime data_update_cadastro;
 
     public long getId() { return id; }
 
@@ -57,9 +57,10 @@ public class Gestor implements Serializable {
     }
 
     public LocalDateTime getData_cadastro() { return data_cadastro; }
+
     public void setData_cadastro(LocalDateTime data_cadastro) { this.data_cadastro = data_cadastro; }
 
-    public LocalDateTime getData_cadastroUpdate() { return data_cadastroUpdate; }
+    public LocalDateTime getData_update_cadastro() {return data_update_cadastro; }
 
-    public void setData_cadastroUpdate(LocalDateTime data_cadastroUpdate) { this.data_cadastroUpdate = data_cadastroUpdate; }
+    public void setData_update_cadastro(LocalDateTime data_update_cadastro) { this.data_update_cadastro = data_update_cadastro;}
 }

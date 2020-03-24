@@ -2,6 +2,7 @@ package com.pontoeletronico.apirest.resources;
 
 import com.pontoeletronico.apirest.models.Gestor;
 import com.pontoeletronico.apirest.repository.GestorRepository;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value="/api/gestao")
+@Api(value="APIREST GESTAO")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class GestorResource {
     @Autowired
     GestorRepository gestorRepository;
