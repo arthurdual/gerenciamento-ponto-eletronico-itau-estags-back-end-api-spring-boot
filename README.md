@@ -100,7 +100,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
    **Body**  
 ```json
 {
-	"id": 7,
+    "id": 7,
     "nome": "Zé",
     "cpf": "2202001115",
     "email":"art@gmil.com"
