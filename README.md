@@ -122,7 +122,7 @@ O **Swagger** da api localhost também pode ser acessada na seguinte URL:&nbsp;&
     "data_cadastroUpdate": "2020-03-24T12:13:13.988"
 }
 ```
-> **OBS:** apesar da data de cadastro retornar null, ela nao foi alterada.  
+> **OBS:** apesar da data de cadastro retornar null, ela não foi alterada.  
 ## Api Ponto  
 ## Listagem pontos batidos  
 #### GET /ponto  
