@@ -47,4 +47,3 @@ public class GestorResource {
         return gestorRepository.save(gestor);
     }
 }
-

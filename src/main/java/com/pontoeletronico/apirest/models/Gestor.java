@@ -28,6 +28,18 @@ public class Gestor implements Serializable {
     @UpdateTimestamp
     private LocalDateTime data_update_cadastro;
 
+    public Gestor() {
+    }
+
+    public Gestor(long id, @NotNull String nome, @NotNull String cpf, @NotNull String email, LocalDateTime data_cadastro, LocalDateTime data_update_cadastro) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+        this.data_cadastro = data_cadastro;
+        this.data_update_cadastro = data_update_cadastro;
+    }
+
     public long getId() { return id; }
 
     public void setId(long id) { this.id = id; }

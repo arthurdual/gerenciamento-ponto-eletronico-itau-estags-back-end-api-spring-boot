@@ -22,6 +22,16 @@ public class Ponto implements Serializable {
     @NotNull
     private String tipo;
 
+    public Ponto() {
+    }
+
+    public Ponto(long id, @NotNull String nome, LocalDateTime data, @NotNull String tipo) {
+        this.id = id;
+        this.nome = nome;
+        this.data = data;
+        this.tipo = tipo;
+    }
+
     public long getId() {
         return id;
     }
