@@ -22,6 +22,8 @@ public class Gestor implements Serializable {
     private String cpf;
     @NotNull
     private String email;
+    @NotNull
+    private String senha;
     @Column(name = "data_cadastro", updatable = false)
     @CreationTimestamp
     private LocalDateTime data_cadastro;
@@ -67,6 +69,10 @@ public class Gestor implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getSenha() { return senha; }
+
+    public void setSenha(String senha) { this.senha = senha; }
 
     public LocalDateTime getData_cadastro() { return data_cadastro; }
 
